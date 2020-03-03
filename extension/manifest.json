@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Example for Demo",
+  "minimum_chrome_version": "24.0.1307.0",
+  "version": "0.0.1",
+  "homepage_url": "https://sarahmorrisonsmith.com/",
+  "icons": {
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sarahmorrisonsmith.com/*"
+      ],
+
+      "js": [
+          "scripts/jquery.js",
+          "scripts/example.js"
+      ],
+
+      "css": ["css/example.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
